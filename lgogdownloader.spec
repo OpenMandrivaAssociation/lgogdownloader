@@ -10,7 +10,7 @@ Source0:	https://github.com/Sude-/lgogdownloader/archive/v%{version}/%{name}-%{v
 BuildRequires:	cmake
 BuildRequires:	help2man
 BuildRequires:	binutils
-BuildRequires:	pkgconfig(htmlcxx)
+#BuildRequires:	pkgconfig(htmlcxx)
 BuildRequires:	pkgconfig(jsoncpp)
 BuildRequires:	pkgconfig(libcrypto)
 BuildRequires:	pkgconfig(libcurl)
