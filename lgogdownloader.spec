@@ -2,7 +2,7 @@ Name:		lgogdownloader
 Version:	3.8
 Release:	1
 Summary:	GOG.com download client
-Group:    Gaming/Internet
+Group:          Games/Internet
 License:	WTFPL
 URL:		https://github.com/Sude-/lgogdownloader
 Source0:	https://github.com/Sude-/lgogdownloader/archive/v%{version}/%{name}-%{version}.tar.gz
