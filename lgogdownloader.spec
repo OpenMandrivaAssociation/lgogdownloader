@@ -8,6 +8,7 @@ URL:		https://github.com/Sude-/lgogdownloader
 Source0:	https://github.com/Sude-/lgogdownloader/archive/v%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires:	cmake
+BuildRequires:  qmake5
 BuildRequires:	help2man
 BuildRequires:	binutils
 BuildRequires:	pkgconfig(htmlcxx)
