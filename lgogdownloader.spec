@@ -11,6 +11,7 @@ BuildRequires:	cmake
 BuildRequires:  qmake5
 BuildRequires:	help2man
 BuildRequires:	binutils
+BuildRequires:  %{_lib}cssparser-devel
 BuildRequires:	pkgconfig(htmlcxx)
 BuildRequires:	pkgconfig(jsoncpp)
 BuildRequires:	pkgconfig(libcrypto)
