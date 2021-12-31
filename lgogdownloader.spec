@@ -19,6 +19,7 @@ BuildRequires:	pkgconfig(zlib)
 BuildRequires:	boost-devel
 BuildRequires:	rhash-devel
 BuildRequires:	pkgconfig(Qt5WebEngine)
+BuildRequires:  pkgconfig(Qt5Widgets)
 
 %description
 LGOGDownloader is an unofficial GOG.com downloader for Linux users. It uses the
