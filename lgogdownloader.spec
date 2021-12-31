@@ -20,6 +20,7 @@ BuildRequires:	pkgconfig(zlib)
 BuildRequires:	boost-devel
 BuildRequires:	rhash-devel
 BuildRequires:	pkgconfig(Qt5WebEngine)
+BuildRequires:  pkgconfig(Qt5WebEngineWidgets)
 BuildRequires:  pkgconfig(Qt5Widgets)
 
 %description
