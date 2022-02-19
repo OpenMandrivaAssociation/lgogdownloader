@@ -1,5 +1,5 @@
 Name:		lgogdownloader
-Version:	3.8
+Version:	3.9
 Release:	1
 Summary:	GOG.com download client
 Group:          Games/Internet
