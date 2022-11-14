@@ -34,7 +34,7 @@ same API as the official GOG Galaxy.
 %autosetup -p1
 
 %build
-
+export LDFLAGS="%{optflags} -lcurl"
 %cmake  \
         -DCMAKE_INSTALL_PREFIX=%{_prefix} \
         -DCMAKE_BUILD_TYPE=Release \
