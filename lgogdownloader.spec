@@ -1,6 +1,6 @@
 Name:		lgogdownloader
 Version:	3.10
-Release:	1
+Release:	2
 Summary:	GOG.com download client
 Group:          Games/Internet
 License:	WTFPL
