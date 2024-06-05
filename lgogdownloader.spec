@@ -19,6 +19,7 @@ BuildRequires:	pkgconfig(jsoncpp)
 BuildRequires:	pkgconfig(libcrypto)
 BuildRequires:	pkgconfig(libcurl)
 BuildRequires:	pkgconfig(tinyxml2)
+BuildRequires:  pkgconfig(tidy)
 BuildRequires:	pkgconfig(zlib)
 BuildRequires:	boost-devel
 BuildRequires:	rhash-devel
