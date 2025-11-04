@@ -1,12 +1,11 @@
 Name:		lgogdownloader
-Version:	3.17
-Release:	4
+Version:	3.18
+Release:	1
 Summary:	GOG.com download client
 Group:          Games/Internet
 License:	WTFPL
 URL:		https://github.com/Sude-/lgogdownloader
 Source0:	https://github.com/Sude-/lgogdownloader/archive/v%{version}/%{name}-%{version}.tar.gz
-Patch0:         https://github.com/Sude-/lgogdownloader/commit/2c55e27f829933869c39ee6255d30a91d2ffebfa.patch
 
 BuildRequires:	cmake
 BuildRequires:  qmake5
