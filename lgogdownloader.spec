@@ -7,8 +7,9 @@ License:	WTFPL
 URL:		https://github.com/Sude-/lgogdownloader
 Source0:	https://github.com/Sude-/lgogdownloader/archive/v%{version}/%{name}-%{version}.tar.gz
 
-BuildRequires:	cmake
-BuildRequires:  qmake5
+BuildSystem:	cmake
+BuildOption:	-DUSE_QT_GUI=ON
+BuildRequires:  qmake-qt6
 BuildRequires:	help2man
 BuildRequires:	binutils
 BuildRequires:  %{_lib}htmlcxx3
@@ -23,27 +24,16 @@ BuildRequires:  pkgconfig(tidy)
 BuildRequires:	pkgconfig(zlib)
 BuildRequires:	boost-devel
 BuildRequires:	rhash-devel
-BuildRequires:	pkgconfig(Qt5WebEngine)
-BuildRequires:  pkgconfig(Qt5WebEngineWidgets)
-BuildRequires:  pkgconfig(Qt5Widgets)
+BuildRequires:	pkgconfig(Qt6WebEngineCore)
+BuildRequires:	pkgconfig(Qt6WebEngineWidgets)
+BuildRequires:	pkgconfig(Qt6Widgets)
 
 %description
 LGOGDownloader is an unofficial GOG.com downloader for Linux users. It uses the
 same API as the official GOG Galaxy.
 
-%prep
-%autosetup -p1
-
-%build
+%conf -p
 export LDFLAGS="%{optflags} -lcurl"
-%cmake  \
-        -DCMAKE_INSTALL_PREFIX=%{_prefix} \
-        -DCMAKE_BUILD_TYPE=Release \
-        -DUSE_QT_GUI=ON
-%make_build
-
-%install
-%make_install -C build
 
 %files
 %license COPYING
